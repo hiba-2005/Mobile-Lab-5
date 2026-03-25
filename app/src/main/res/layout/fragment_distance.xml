@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F4F8FB">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertisseur de distance"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#1F3B5B"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rgDist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="14dp">
+
+        <RadioButton
+            android:id="@+id/rbKmToMiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Km vers Miles"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbMilesToKm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miles vers Km"
+            android:layout_marginStart="18dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etDistInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Saisir une distance"
+        android:inputType="numberDecimal"
+        android:backgroundTint="#3F51B5"
+        android:layout_marginBottom="14dp" />
+
+    <Button
+        android:id="@+id/btnConvertDist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lancer la conversion"
+        android:textAllCaps="false"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvDistResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Résultat : -"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:textColor="#0D47A1"
+        android:layout_marginTop="6dp" />
+</LinearLayout>
